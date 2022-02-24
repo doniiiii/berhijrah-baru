@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Bonheur+Royale&family=PT+Serif&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Scheherazade+New&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif&display=swap');
+:root{
+	--baseColor: #4e3056;
+	--jadwalFont:  font-family: 'Bonheur Royale', cursive;;
+	--fontArab:  'Scheherazade New', serif;
+	--fontMurotal : 'PT Serif', serif;
+	--black : rgb(0, 0, 0);
+
+	font-size: 12px;
+}
+*{
+	list-style: none;
+}
+body{
+	
+	font-family: "Montserrat", sans-serif;
+	overflow-x: hidden;
+	color: #fff;
+}
+nav{
+	background: var(--baseColor);
+}
+.nav-link{
+	color: #fff !important;
+}
+.abizar{
+	font-family: 'Bonheur Royale', cursive;
+}
+.panel{
+	font-size: 2em;
+	font-family: 'Scheherazade New', serif;
+	font-weight: normal;
+	line-height: 46px;
+
+}
+.panel > li > .arti{
+	text-align: center;
+}
+.ul_waktu{
+  	margin-left: -32px;
+}
+.ul_waktu > li{
+	background: #eee;
+}
+
+.li_waktu{
+	width: 100% !important;
+	background: var(--baseColor);
+	border-radius: 8px;
+}
+.jadwal-wrapper {
+	width: 90%;
+	max-width: 360px;
+ }
+ 
+ .jadwal-wrapper .col {
+	display: flex;
+	justify-content: center;
+ }
+ 
+ .jadwal {
+	background-color: var(--white);
+	border-radius: 6px;
+	align-items: center;
+	display: inline-flex;
+	width: 100%;
+ }
+ 
+ .jadwal-icon {
+	width: 40px;
+	max-width: 100%;
+ }
+ 
+.nav{
+	background: var(--baseColor);
+}
+.btn-nav{
+	background: #eee !important;
+}
+.btn-quran{
+	background: var(--baseColor);
+}
+/* Style the buttons that are used to open and close the accordion panel */
+.accordion {
+  background-color: #00000000;
+	color: #fff;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  text-align: left;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+
+/* Style the accordion panel. Note: hidden by default */
+.panel {
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
+  text-align: right;
+}
+.footer{
+	box-sizing: border-box;
+	padding: 20px;
+	position: relative;
+	bottom: -20px;
+	background: var(--baseColor);
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+}
+.footer .kiri ul{
+	display: flex;
+	justify-content: center;
+}
+.footer .kiri ul li{
+	margin-left: 8px;
+}
+	@media only screen and (max-width: 600px)  {
+		.ul_quran{
+			font-size: 1.5em;
+		}
+		.ul_waktu{
+			display: grid;
+			grid-template-columns: 1fr 1fr;
+		}
+		.panel{
+			font-size: 1.4em;
+		}
+		.container-murotal{
+			flex-direction: column;
+		}
+		.footer{
+			grid-template-columns: 1fr;
+		}
+	}
+	@media only screen and (min-width: 600px)  {
+		.li_waktu{
+			width: 30% !important;
+		}
+		
+	}
+	@media only screen and (min-width: 800px)  {
+		.li_waktu{
+			width: 30% !important;
+		}
+		
+	}
